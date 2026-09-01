@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Link,Navigate,useLocation,Routes,Route } from 'react-router-dom';
-import Inicio from './Componentes/Inicio';
+import Inicio from './Componentes/Inicio.tsx';
 import Proyectos from './Componentes/Proyectos';
 import Certificados from './Componentes/Certificados.tsx';
 import { url } from './Funciones';

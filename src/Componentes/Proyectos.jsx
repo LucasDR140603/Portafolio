@@ -1,8 +1,8 @@
-import web from '../img/CapturaWEB.JPG'
-import appweb from '../img/CapturaAPPWEB.JPG'
-import streamlit from '../img/Streamlit.JPG'
+import web from '../img/CapturaWEB.jpg'
+import appweb from '../img/CapturaAPPWEB.jpg'
+import streamlit from '../img/Streamlit.jpg'
 import mobil from '../img/CapturaAPP.jpg'
-import api from '../img/CapturaAPI.JPG'
+import api from '../img/CapturaAPI.jpg'
 import Proyecto from './Proyecto'
 import { Link } from 'react-router-dom'
 export default function({}){

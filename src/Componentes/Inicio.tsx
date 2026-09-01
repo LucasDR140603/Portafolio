@@ -7,11 +7,11 @@ import { TbWorldWww } from "react-icons/tb"
 import { ImMobile } from "react-icons/im"
 import { IoIosSettings } from "react-icons/io"
 import Carrusel from './Carrusel'
-import web from '../img/CapturaWEB.JPG'
-import appweb from '../img/CapturaAPPWEB.JPG'
-import streamlit from '../img/Streamlit.JPG'
+import web from '../img/CapturaWEB.jpg'
+import appweb from '../img/CapturaAPPWEB.jpg'
+import streamlit from '../img/Streamlit.jpg'
 import mobil from '../img/CapturaAPP.jpg'
-import api from '../img/CapturaAPI.JPG'
+import api from '../img/CapturaAPI.jpg'
 export default function({}){
     return (
         <>
