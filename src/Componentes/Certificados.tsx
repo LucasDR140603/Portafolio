@@ -1,17 +1,20 @@
 import Certificado1 from '../img/Certificado1.jpg'
 import Certificado2 from '../img/Certificado2.jpg'
 import { useState,useRef,useEffect } from 'react'
+import {Dialog,DialogTitle,DialogContent,IconButton} from '@mui/material'
+import CloseIcon from '@mui/icons-material/Close'
 import Close from './Close.tsx'
+import {TransformWrapper,TransformComponent} from 'react-zoom-pan-pinch'
 export default function({}){
     const imagenes=[Certificado1,Certificado2]
     const [index,setIndex]=useState<number>(-1)
-    const ventana=useRef<any>(null)
+    // const ventana=useRef<any>(null)
     useEffect(()=>{
         if (index!=-1){
-            ventana.current.showModal()
+            // ventana.current.showModal()
         }
         else{
-            ventana.current.close()
+            // ventana.current.close()
         }
     },[index])
     return (
@@ -20,12 +23,22 @@ export default function({}){
             <div className='certificados'>
                 {imagenes.map((x,i)=>(<img key={i} src={x} title='Click para agrandar' onClick={()=>{setIndex(i)}}/>))}
             </div>
-            <dialog ref={ventana} onClose={()=>{setIndex(-1)}}>
+            {/* <dialog ref={ventana} onClose={()=>{setIndex(-1)}}>
                 <Close onClick={()=>{setIndex(-1)}}/>
                 <div>
                     <img src={imagenes[index]}/>
                 </div>
-            </dialog>
+            </dialog> */}
+            {index!=-1?<Dialog open={index!=-1} onClose={()=>{setIndex(-1)}} maxWidth='md'>
+                {/* <DialogTitle sx={{display:'flex',justifyContent:'end'}}>
+                    <IconButton onClick={()=>{setIndex(-1)}}>
+                        <CloseIcon/>
+                    </IconButton>
+                </DialogTitle> */}
+                <DialogContent>
+                    <img src={imagenes[index]} style={{width:'100%', height: 'auto'}}/>
+                </DialogContent>
+            </Dialog>:null}
         </>
     )
 }

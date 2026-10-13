@@ -1,5 +1,6 @@
 import { MdArrowLeft,MdArrowRight } from "react-icons/md";
 import { useState,useEffect } from "react";
+import {IconButton} from '@mui/material'
 export default function({fotos}){
     const [index,setIndex]=useState(0)
     const anterior=index==0?fotos.length-1:index-1
@@ -38,14 +39,14 @@ export default function({fotos}){
     },[derecha])
     return (
         <div style={{display:'flex',alignItems:'center',justifyContent:'center',gap:'1rem'}}>
-            <a className="btn" onClick={async()=>{setIzquierda(true);await delay(duracion-25);setIzquierda(false);}}><MdArrowLeft size={'7vmin'}/></a>
+            <IconButton onClick={async()=>{setIzquierda(true);await delay(duracion-25);setIzquierda(false);}}><MdArrowLeft size={'7vmin'}/></IconButton>
             <div style={{maxWidth:'100%',overflow:'hidden',position:'relative',width:`${ancho}px`,aspectRatio:`${ancho}/${alto}`}}>
                 <img src={fotos[index]} style={{maxWidth:'100%',maxHeight:'100%',position:'absolute',left:'50%',top:'50%',transform:'translate(-50%,-50%)',animation:`${(izquierda || derecha)?'centro-'+(izquierda?'derecha':'izquierda'):''} ${duracion}ms forwards`}}/>
                 {izquierda || derecha?
                 <img src={fotos[izquierda?anterior:posterior]} style={{maxWidth:'100%',maxHeight:'100%',position: 'absolute',top: '50%',transform: 'translate(-50%, -50%)',animation:`${izquierda?'izquierda':'derecha'}-centro ${duracion}ms`}}/>
                 :null}
             </div>
-            <a className="btn" onClick={async()=>{setDerecha(true);await delay(duracion-25);setDerecha(false);}}><MdArrowRight size={'7vmin'}/></a>
+            <IconButton onClick={async()=>{setDerecha(true);await delay(duracion-25);setDerecha(false);}}><MdArrowRight size={'7vmin'}/></IconButton>
         </div>
     )
 }

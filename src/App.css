@@ -97,21 +97,22 @@ h2,h3{
   grid-template-columns: repeat(3,1fr);
 }
 .proyectos{
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
   row-gap: 1rem;
 }
-.proyecto{
+/* .proyecto{
   grid-column:span 2
-}
+} */
 .proyecto p>p{
   text-align: center;
 }
-.proyecto:nth-child(4){
+/* .proyecto:nth-child(4){
   grid-column: 2/span 2;
 }
 .proyecto:nth-child(5){
   grid-column: 4/span 2;
-}
+} */
 hr{
   width: 100%;
 }
@@ -129,11 +130,11 @@ hr{
   grid-row: 1;
 }
 .areas>h2:first-child{
-  grid-column: 1;
+  /* grid-column: 1; */
   grid-area: f;
 }
 .areas>h2:not(:first-child){
-  grid-column: 2;
+  /* grid-column: 2; */
   grid-area: b;
 }
 .area,.proyecto{

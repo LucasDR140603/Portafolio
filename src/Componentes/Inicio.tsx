@@ -7,9 +7,10 @@ import { TbWorldWww } from "react-icons/tb"
 import { ImMobile } from "react-icons/im"
 import { IoIosSettings } from "react-icons/io"
 import Carrusel from './Carrusel'
-import web from '../img/CapturaWEB.jpg'
-import appweb from '../img/CapturaAPPWEB.jpg'
+import web from '../img/CapturaWEB.png'
+import appweb from '../img/CapturaAPPWEB.png'
 import streamlit from '../img/Streamlit.jpg'
+import consultoria from '../img/ConsultorIA.png'
 import mobil from '../img/CapturaAPP.jpg'
 import api from '../img/CapturaAPI.jpg'
 export default function({}){
@@ -29,7 +30,7 @@ export default function({}){
             <br/>
             <hr/>
             <br/>
-            <Carrusel fotos={[web,appweb,streamlit,mobil,api]}/>
+            <Carrusel fotos={[web,appweb,streamlit,consultoria,mobil,api]}/>
         </>
     )
 }
