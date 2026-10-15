@@ -64,6 +64,16 @@ a{
   header,footer{
     padding:0rem 1rem;
   }
+  header{
+    gap:0.25rem
+  }
+  .MuiTab-root{
+    font-size: 0.5rem !important;
+    padding:0 0.5rem !important;
+    line-height: normal !important;
+    width: fit-content !important;
+    min-width: fit-content !important;
+  }
 }
 .enlaces>a{
   font-weight: bold;
@@ -77,6 +87,7 @@ a{
 .titulo{
   font-size: 3vw;
   letter-spacing: 10px;
+  width: fit-content;
 }
 .marcado,span,h2{
   color: yellow;
@@ -241,7 +252,7 @@ hr{
   justify-content: center;
   align-items: center;
   flex:1;
-  flex-wrap: wrap;
+
 }
 .certificados img{
   max-height: 65vh; 
@@ -249,7 +260,7 @@ hr{
   object-fit: contain;
   height: auto;
   width: auto;
-  flex:1
+  flex:1;
 }
 @media (max-width:680px){
   .certificados{

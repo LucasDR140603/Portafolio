@@ -18,7 +18,7 @@ function App() {
       <div className="App">
         <header>
           <h1 className='titulo'>LUCAS DIOGO ROSENDE</h1>
-          <Tabs value={location} sx={{borderBottom:1,borderColor:'#757575'}}>
+          <Tabs value={location} sx={{borderBottom:1,borderColor:'#757575'}} variant='scrollable' scrollButtons={'auto'} allowScrollButtonsMobile>
             {enlaces.map((x,i)=>(<Tab to={`/${i==0?'':url(x)}`} value={i==0?'':url(x)} component={Link} label={x.toUpperCase()}/>))}
           </Tabs>
           {/* <div className='enlaces'>

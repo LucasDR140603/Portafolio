@@ -24,7 +24,7 @@ export default function({}){
             <h2>CERTIFICADOS</h2>
             <div className='certificados'>
                 {imagenes.map((x,i)=>(<img key={i} src={x} title='Click para agrandar' onClick={()=>{setIndex(i)}}/>))}
-                <iframe src='https://drive.google.com/file/d/13cABsqSUjoG90neb_Oxk-2hb6vKSwCvV/preview?usp=sharing' style={{flex:1,height:'100%',maxHeight:'65vh',width:'auto'}}></iframe>
+                <iframe src='https://drive.google.com/file/d/13cABsqSUjoG90neb_Oxk-2hb6vKSwCvV/preview?usp=sharing' style={{flex:1,height:'100%',maxHeight:'65vh',maxWidth:'100%',width:'auto'}}></iframe>
             </div>
             {/* <dialog ref={ventana} onClose={()=>{setIndex(-1)}}>
                 <Close onClick={()=>{setIndex(-1)}}/>
