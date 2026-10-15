@@ -249,7 +249,7 @@ hr{
   object-fit: contain;
   height: auto;
   width: auto;
-
+  flex:1
 }
 @media (max-width:680px){
   .certificados{

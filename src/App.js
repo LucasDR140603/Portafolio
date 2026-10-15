@@ -7,7 +7,7 @@ import Certificados from './Componentes/Certificados.tsx';
 import { url } from './Funciones';
 import linkedin from './img/linkedin.png'
 import theme from './theme.js'
-import { Button } from '@mui/material';
+import { Button,Tabs,Tab } from '@mui/material';
 import { ThemeProvider } from '@emotion/react';
 function App() {
   const location=useLocation().pathname.replace('/','')
@@ -18,9 +18,12 @@ function App() {
       <div className="App">
         <header>
           <h1 className='titulo'>LUCAS DIOGO ROSENDE</h1>
-          <div className='enlaces'>
+          <Tabs value={location} sx={{borderBottom:1,borderColor:'#757575'}}>
+            {enlaces.map((x,i)=>(<Tab to={`/${i==0?'':url(x)}`} value={i==0?'':url(x)} component={Link} label={x.toUpperCase()}/>))}
+          </Tabs>
+          {/* <div className='enlaces'>
             {enlaces.map((x,i)=>(<Link to={`/${url(x)}`} className={location.includes(url(x)) || (i==0 && location=='')?'marcado':''}>{x.toUpperCase()}</Link>))}
-          </div>
+          </div> */}
         </header>
         <main>
           <div style={{margin:'0 auto',height:'100%',display:'flex',flexDirection:'column'}}>
