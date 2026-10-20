@@ -1,5 +1,5 @@
 import web from '../img/CapturaWEB.png'
-import appweb from '../img/CapturaAPPWEB.png'
+import appweb from '../img/CapturaAPPWEB.jpg'
 import streamlit from '../img/Streamlit.jpg'
 import mobil from '../img/CapturaAPP.jpg'
 import api from '../img/CapturaAPI.jpg'

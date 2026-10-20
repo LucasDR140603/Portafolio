@@ -8,7 +8,7 @@ import { ImMobile } from "react-icons/im"
 import { IoIosSettings } from "react-icons/io"
 import Carrusel from './Carrusel'
 import web from '../img/CapturaWEB.png'
-import appweb from '../img/CapturaAPPWEB.png'
+import appweb from '../img/CapturaAPPWEB.jpg'
 import streamlit from '../img/Streamlit.jpg'
 import consultoria from '../img/ConsultorIA.png'
 import mobil from '../img/CapturaAPP.jpg'
