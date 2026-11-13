@@ -4,9 +4,9 @@ import streamlit from '../img/Streamlit.jpg'
 import mobil from '../img/CapturaAPP.jpg'
 import api from '../img/CapturaAPI.jpg'
 import consultoria from '../img/ConsultorIA.png'
-import Proyecto from './Proyecto'
+import Proyecto from './Proyecto.tsx'
 import { Link } from 'react-router-dom'
-export default function({}){
+export default function Proyectos({}){
     return (
         <>
             <h2>PROYECTOS</h2>

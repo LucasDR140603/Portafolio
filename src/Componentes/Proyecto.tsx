@@ -1,10 +1,15 @@
 import HTMLReactParser from "html-react-parser/lib/index"
-export default function({img,title,text}){
+interface Props{
+    img:string,
+    title:string,
+    text:string
+}
+export default function Proyecto({img,title,text}:Props){
     const parse=HTMLReactParser
     return (
         <div className="proyecto">
             <div style={{backgroundColor:'#121212'}}>
-                <img src={img}/>
+                <img src={img} alt={''}/>
             </div>
             <div style={{padding:'0 1rem'}}>
                 <h3 style={{color:'yellow'}}>{title.toUpperCase()}</h3>
